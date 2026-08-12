@@ -21,7 +21,7 @@ Um zu verhindern, dass dieses für die Community entwickelte Projekt von Dritten
 
 ## 🛠️ Benötigte Bauteile (BOM)
 1. **Mikrocontroller:** 1x Arduino Mega 2560
-2. **Display:** 1x W164B-NLW (16x4 Zeichen reines LCD-Display mit I2C-Rucksack)
+2. **Display:** 1x W164B-NLW (16x4 Zeichen reines LCD-Display mit I2C Modul HLF8574T)
 3. **Bedienelement:** 1x Drehencoder-Modul mit Drucktaster (SW)
 4. **Audio-Decoder:** 1x NE567- oder LM567-Tondecoder-Modul (Frequenzselektiver PLL-Filter)
 5. **Mithörton:** 1x Passiver Piezo-Summer (Buzzer)
@@ -70,7 +70,7 @@ Es wird keine Arduino IDE benötigt, um das CW-Tool einsatzbereit zu machen. Die
 ## 🚀 Bedienungsanleitung
 
 ### 1. Der Systemstart
-Beim Einschalten erscheint für 5 Sekunden der Bootscreen mit dem Rufzeichen `CW Tool by DL9KS`. Danach lädt das Hauptmenü. Drehe den Encoder, um den Pfeil zu bewegen, und drücke auf die Achse, um zu bestätigen.
+Beim Einschalten erscheint für 5 Sekunden der Bootscreen mit dem Rufzeichen `CW-Tool by DL9KS`. Danach lädt das Hauptmenü. Drehe den Encoder, um den Pfeil zu bewegen, und drücke auf die Achse, um zu bestätigen.
 
 ### 2. Modus: Handtaste
 Schließe deine Handtaste an Pin 8 und GND an. Der Arduino misst dein Gebertempo adaptiv (Paris-Standard) und zeigt dir das errechnete Tempo oben rechts in **WPM** an. Der Mithörton (700 Hz) läuft über den Summer mit.
