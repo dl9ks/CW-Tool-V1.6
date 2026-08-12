@@ -19,9 +19,9 @@ Um zu verhindern, dass dieses für die Community entwickelte Projekt von Dritten
 
 ---
 
-## 🛠️ Benötigte Bauteile (BOM)
+## 🛠️ Benötigte Bauteile
 1. **Mikrocontroller:** 1x Arduino Mega 2560
-2. **Display:** 1x W164B-NLW (16x4 Zeichen reines LCD-Display mit I2C Modul HLF8574T)
+2. **Display:** 1x W164B-NLW (16x4 Zeichen reines LCD-Display mit I²C Modul HLF8574T) oder 16x4 LCD (HD44780) kompatible mit i²C anschluss
 3. **Bedienelement:** 1x Drehencoder-Modul mit Drucktaster (SW)
 4. **Audio-Decoder:** 1x NE567- oder LM567-Tondecoder-Modul (Frequenzselektiver PLL-Filter)
 5. **Mithörton:** 1x Passiver Piezo-Summer (Buzzer)
@@ -35,8 +35,8 @@ Um zu verhindern, dass dieses für die Community entwickelte Projekt von Dritten
 | :--- | :--- | :--- | :--- |
 | **W164B Display** | VCC | **5V** | Stromversorgung Display |
 | | GND | **GND** | Masse Display |
-| | SDA | **20 (SDA)** | Festgelegte I2C Datenleitung |
-| | SCL | **21 (SCL)** | Festgelegte I2C Taktleitung |
+| | SDA | **20 (SDA)** | Festgelegte I²C Datenleitung |
+| | SCL | **21 (SCL)** | Festgelegte I²C Taktleitung |
 | **Drehencoder** | SW (Taster) | **2 (PWM 2)** | Echter Hardware-Interrupt 0 (Aufwachen) |
 | | CLK (A-Leitung)| **11 (PWM 11)** | Interruptfreier Navigations-Pin |
 | | DT (B-Leitung) | **12 (PWM 12)** | Interruptfreier Navigations-Pin |
@@ -51,7 +51,7 @@ Um zu verhindern, dass dieses für die Community entwickelte Projekt von Dritten
 
 ---
 
-## 💾 Anleitung: Firmware auf den Arduino Mega laden
+## 💾 Anleitung: Firmware auf den Arduino MEGA 2560 laden
 
 Es wird keine Arduino IDE benötigt, um das CW-Tool einsatzbereit zu machen. Die fertige Firmware lässt sich in wenigen Sekunden direkt auf das Board flashen:
 
@@ -60,7 +60,7 @@ Es wird keine Arduino IDE benötigt, um das CW-Tool einsatzbereit zu machen. Die
 3. Verbinde deinen Arduino Mega 2560 per USB-Kabel mit dem PC.
 4. Öffne den **XLoader**:
    * Wähle bei **Hex file** deine heruntergeladene `.hex`-Datei aus.
-   * Stelle bei **Device** unbedingt `Mega(ATmega2560)` ein.
+   * Stelle bei **Device** unbedingt `Mega 2560 (ATmega2560)` ein.
    * Wähle bei **COM Port** den passenden Anschluss deines Arduinos aus.
    * Belasse die **Baudrate** auf dem Standardwert (`115200`).
 5. Klicke auf **Upload**. Nach wenigen Sekunden blinken die TX/RX-LEDs auf dem Board und im XLoader steht *"Upload abgeschlossen"*. Das CW-Tool startet sofort!
