@@ -1,10 +1,10 @@
 # 📻 CW-Tool V1.6 (MEGA Edition)
-**Ein Freeware-Projekt für die Amateurfunk-Gemeinschaft (Hamspirit)**  
-*(C) 2026 de DL9KS*
+** Ein Freeware-Projekt für die Amateurfunk-Gemeinschaft **  
+* (C) 2026 de DL9KS *
 
 Dieses leistungsstarke und autarke CW Tool basiert auf dem **Arduino Mega 2560** und dient als universelles Werkzeug im Shack oder für den Portabelbetrieb. Es bietet eine automatische Dekodierung von Handtasten, Paddles sowie echten Funksignalen und beinhaltet einen flexiblen Morse-Trainer.
 
-**WICHTIGER HINWEIS ZUM SCHUTZ DES PROJEKTS:**  
+** ⚠️ WICHTIGER HINWEIS ZUM SCHUTZ DES PROJEKTS:⚠️ **  
 Um zu verhindern, dass dieses für die Community entwickelte Projekt von Dritten kommerziell verwertet, verändert oder unter falschem Namen verbreitet wird, bleibt der Quellcode unter Verschluss. Das Programm wird als fertig kompilierte Firmware (**`.hex`-Datei**) absolut kostenlos zur privaten Nutzung zur Verfügung gestellt. Jede kommerzielle Nutzung oder der unautorisierte Verkauf ist strengstens untersagt!
 
 ---
